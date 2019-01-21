@@ -1,4 +1,4 @@
-## Git commit-id
+## Git change-id
 
 This git hook adds a change-id to the commit message on commit. eg
 
