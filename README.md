@@ -18,5 +18,5 @@ Install
 
 ```
 cd some-repo
-curl -so - "https://raw.githubusercontent.com/phdata/git-hooks/master/commit-msg-add-change-id" > .git/hooks/commit-msg && chmod 755 .git/hooks/commit-msg
+curl -Lo .git/hooks/commit-msg "https://raw.githubusercontent.com/phdata/git-hooks/master/commit-msg-add-change-id" && chmod 755 .git/hooks/commit-msg
 ```
