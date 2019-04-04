@@ -14,8 +14,15 @@ Date:   Fri Jan 18 22:01:34 2019 -0600
 
 This change id will persist across squash and unclean cherry-picks.
 
-Install
+Install Globally
 
+```
+git config --global init.templatedir '~/.git-templates'
+mkdir -p ~/.git-templates/hooks
+curl -so - "https://raw.githubusercontent.com/phdata/git-hooks/master/commit-msg-add-change-id" > ~/.git-templates/hooks/commit-msg
+chmod 755 ~/.git-templates/hooks/commit-msg
+```
+Install in a single repo
 ```
 cd some-repo
 curl -Lo .git/hooks/commit-msg "https://raw.githubusercontent.com/phdata/git-hooks/master/commit-msg-add-change-id" && chmod 755 .git/hooks/commit-msg
