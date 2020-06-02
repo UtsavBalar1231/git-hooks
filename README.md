@@ -27,3 +27,11 @@ Install in a single repo
 cd some-repo
 curl -Lo .git/hooks/commit-msg "https://raw.githubusercontent.com/phdata/git-hooks/master/commit-msg-add-change-id" && chmod 755 .git/hooks/commit-msg
 ```
+
+## Spotless Check Before Commit
+
+Install in a single repo
+```
+cd some-repo
+curl -Lo .git/hooks/pre-commit "https://raw.githubusercontent.com/phdata/git-hooks/master/pre-commit-spotless-check" && chmod 755 .git/hooks/pre-commit
+```
